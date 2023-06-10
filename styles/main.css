@@ -1,0 +1,190 @@
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #ecf2f8;
+  display: grid;
+  place-items: center;
+}
+
+.testimonials-grid {
+  max-width: 1110px;
+  margin-inline: 16px;
+  display: grid;
+  grid-template-rows: 282px 266px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'daniel daniel jonathan kira'
+    'jeanette patrick patrick kira';
+  row-gap: 30px;
+  column-gap: 24px;
+}
+
+section {
+  z-index: 100000;
+  position: relative;
+}
+
+.testimonials-grid__card {
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  border-radius: 8px;
+  padding-inline: 32px;
+  padding-top: 26px;
+}
+
+.testimonials-grid__card:nth-child(1) {
+  grid-area: daniel;
+  background-color: #733fc8;
+  position: relative;
+}
+
+.testimonials-grid__card:nth-child(1)::after {
+  content: url('../images/bg-pattern-quotation.svg');
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+
+.testimonials-grid__card:nth-child(2) {
+  grid-area: jonathan;
+  background-color: #48556a;
+}
+
+.testimonials-grid__card:nth-child(3) {
+  grid-area: kira;
+  background-color: #ffffff;
+}
+
+.testimonials-grid__card:nth-child(4) {
+  grid-area: jeanette;
+  background-color: #ffffff;
+}
+
+.testimonials-grid__card:nth-child(5) {
+  grid-area: patrick;
+  background-color: #19202d;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  margin-bottom: 18px;
+}
+
+.card__header img {
+  max-width: 28px;
+  max-height: 28px;
+  border-radius: 50%;
+}
+
+hgroup {
+  display: grid;
+  row-gap: 4px;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #ffffff;
+}
+
+.card__status {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.card__heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.card__paragraph {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.testimonials-grid__card:nth-child(1) .card__paragraph {
+  color: #cfcfcf;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.testimonials-grid__card:nth-child(2) .card__paragraph {
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.testimonials-grid__card:nth-child(3) .card__paragraph {
+  color: #48556a;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.testimonials-grid__card:nth-child(4) .card__paragraph {
+  color: #48556a;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.testimonials-grid__card:nth-child(5) .card__paragraph {
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.testimonials-grid__card:nth-child(3) .card__heading {
+  color: #48556a;
+}
+
+.testimonials-grid__card:nth-child(4) .card__heading {
+  color: #48556a;
+}
+
+.testimonials-grid__card:nth-child(4) .card__name,
+.testimonials-grid__card:nth-child(3) .card__name {
+  color: #48556a;
+}
+
+.testimonials-grid__card:nth-child(4) .card__status,
+.testimonials-grid__card:nth-child(3) .card__status {
+  color: #48556a;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.testimonials-grid__card:nth-child(5) img,
+.testimonials-grid__card:nth-child(1) img {
+  border: 2px solid #a775f1;
+}
+
+@media only screen and (max-width: 1110px) {
+  .testimonials-grid {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'daniel'
+      'jonathan'
+      'jeanette'
+      'patrick'
+      'kira';
+    row-gap: 24px;
+    margin-block: 71px;
+  }
+
+  .testimonials-grid__card {
+    padding-bottom: 32px;
+  }
+
+  .testimonials-grid__card:nth-child(1)::after {
+    right: 24px;
+  }
+}
