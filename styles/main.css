@@ -14,8 +14,7 @@ body {
   grid-template-areas:
     'daniel daniel jonathan kira'
     'jeanette patrick patrick kira';
-  row-gap: 30px;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 section {
