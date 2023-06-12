@@ -14,7 +14,8 @@ body {
   grid-template-areas:
     'daniel daniel jonathan kira'
     'jeanette patrick patrick kira';
-  gap: 24px;
+  column-gap: 30px;
+  row-gap: 24px;
 }
 
 section {
@@ -101,7 +102,7 @@ hgroup {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .card__paragraph {
